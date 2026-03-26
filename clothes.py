@@ -58,5 +58,4 @@ for part in response.parts:
     if part.inline_data is not None:
         image = part.as_image()
         image.save(output_filename)
-        # This line is CRITICAL for your Java code to work
         print(f"Image saved as {output_filename}")
